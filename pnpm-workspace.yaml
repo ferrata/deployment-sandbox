@@ -1,4 +1,4 @@
 packages:
-  - "app"
-  - "api"
-  - "tools/*"
+  - 'app'
+  - 'api'
+  - 'tools/*'

@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "lightyen.tailwindcss-intellisense-twin",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "mgmcdermott.vscode-language-babel",
+    "mikestead.dotenv",
+    "ms-azuretools.vscode-docker",
+    "orta.vscode-jest",
+    "streetsidesoftware.code-spell-checker",
+    "vscode-icons-team.vscode-icons",
+    "blanu.vscode-styled-jsx",
+    "thebearingedge.vscode-sql-lit",
+    "nefrob.vscode-just-syntax",
+    "github.vscode-github-actions"
+  ]
+}

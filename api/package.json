@@ -4,12 +4,11 @@
   "private": true,
   "scripts": {
     "build": "nest build",
-    "format": "prettier --write \"src/**/*.ts\"",
     "start": "nest start",
-    "dev": "nest start --watch",
+    "dev": "env-cmd nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\""
+    "lint": "eslint ."
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
@@ -22,10 +21,12 @@
     "@deployment-sandbox/eslint-config": "workspace:^",
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
+    "@tsconfig/node18": "^1.0.0",
     "@types/express": "^4.17.17",
     "@types/node": "^20.3.1",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "env-cmd": "^10.1.0",
     "eslint": "^8.42.0",
     "prettier": "^3.0.0",
     "source-map-support": "^0.5.21",

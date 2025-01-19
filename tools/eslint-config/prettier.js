@@ -1,9 +1,9 @@
 /** @type {import("eslint").Linter.Config} */
 const config = {
-  extends: ["plugin:prettier/recommended"],
+  extends: ['plugin:prettier/recommended'],
   rules: {
-    "prettier/prettier": ["error"],
+    'prettier/prettier': ['error'],
   },
-};
+}
 
-module.exports = config;
+module.exports = config
