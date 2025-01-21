@@ -1,0 +1,38 @@
+name: App CI
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - .github/**/*
+      - package.json
+      - app/**/*
+      - tools/eslint-config/**/*
+      - tools/prettier-config/**/*
+env:
+  PACKAGE_NAME: '@deployment-sandbox/app'
+  PACKAGE_PATH: app
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/install-node-and-pnpm
+      - name: Lint
+        run: pnpm turbo lint --filter="$PACKAGE_NAME"
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/install-node-and-pnpm
+      - name: Test
+        run: pnpm turbo test --filter="$PACKAGE_NAME"
+  typecheck:
+    name: Typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/install-node-and-pnpm
+      - name: Typecheck
+        run: pnpm turbo typecheck --filter="$PACKAGE_NAME"
