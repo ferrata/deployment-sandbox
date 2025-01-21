@@ -3,7 +3,8 @@
   "version": "0.0.0-unversioned",
   "private": true,
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@next/eslint-plugin-next": "^14.1.0",

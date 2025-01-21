@@ -9,7 +9,8 @@
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "test": "jest --randomize",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@nestjs/common": "^10.2.3",
